@@ -1,0 +1,16 @@
+.base{
+    display: flex;
+  
+}
+
+.base_navbar{
+    width: 15%;
+    background-color:darkgrey;
+    display: flex;
+    justify-content: center;
+}
+
+.base_news_column{
+    width: 100%;
+    background-color: cornflowerblue;
+}

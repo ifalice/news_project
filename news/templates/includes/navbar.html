@@ -1,0 +1,10 @@
+{% load static %}
+
+{% block link_css_navbar %}
+    <link rel="stylesheet" href="{% static 'news/css/navbar.css' %}">
+{% endblock %}
+
+<nav class="main_navbar">
+    <p><a href="{% url 'main_menu' %}">MAIN MENU</a></p> 
+    <p><a href="{% url 'category' %}">CATEGORY</a> </p>
+</nav>

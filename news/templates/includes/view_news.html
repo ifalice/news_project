@@ -1,0 +1,10 @@
+{% load static %}
+{% block link_css %}
+    <link rel="stylesheet" href="{% static 'news/css/news.css' %}">
+{% endblock %}
+
+<div class="main_news">
+    <h3 class="news_title">{{ new.title }}</h3>
+    <h3 class="news_category"><a href="{% url 'show_news_by_category' new.category|lower %}">{{ new.category|title }}</a></h3>
+    <p style="width:500px">{{ new.content_news }}</p>
+</div>

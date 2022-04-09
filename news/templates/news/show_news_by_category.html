@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ name_category|upper }}
+{% endblock %}
+
+{% block navbar %}
+    {% include 'includes/navbar.html' %}
+{% endblock %}
+{% block content %}
+    
+    {% for new in news_by_category %}
+        {% include 'includes/view_news.html' %}
+    {% endfor %}
+{% endblock %}

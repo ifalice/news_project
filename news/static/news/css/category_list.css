@@ -1,0 +1,7 @@
+.base_news_column{
+    background-color:burlywood;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

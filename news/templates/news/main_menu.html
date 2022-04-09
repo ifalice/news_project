@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    MAIN NEWS
+{% endblock %}
+
+{% block navbar %}
+    {% include 'includes/navbar.html' %}
+{% endblock %}
+{% block content %}
+    <h1>MAIN NEWS</h1>
+    
+    {% for new in all_news %}
+        {% include 'includes/view_news.html' %}
+    {% endfor %}
+{% endblock %}
